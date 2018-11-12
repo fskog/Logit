@@ -1,0 +1,35 @@
+﻿.title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 16px;
+}
+
+.location {
+    font-style: italic;
+    font-size: 12px;
+    float: right;
+
+}
+
+.description {
+    font-size: 16px;
+}
+
+.complete__wrapper {
+    text-align: left;
+    
+}
+
+.complete__check {
+    color: green;
+}
+
+.complete__date {
+    color: green;
+    font-style: normal;
+    font-size: 12px;
+}

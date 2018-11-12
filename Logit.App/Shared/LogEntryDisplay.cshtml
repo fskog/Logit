@@ -1,0 +1,33 @@
+﻿<div class="alert alert-secondary mt-4" role="alert">
+    <span class="oi oi-calendar mr-2" aria-hidden="true"></span>
+    <span class="date">@Date</span><span class="location">@Location</span>
+    @if(!String.IsNullOrWhiteSpace(CompleteDate)) {
+    @:<div class="complete__wrapper"><span class="oi oi-check complete__check"></span><span class="complete__date">Completed on @CompleteDate</span></div>
+    }
+    <div class="title">@Title</div>
+    <p class="text-nowrap description">
+        @Description
+    </p>
+
+
+
+</div>
+
+@functions {
+
+    [Parameter]
+    string Title { get; set; }
+
+    [Parameter]
+    string Description { get; set; }
+
+    [Parameter]
+    string Date { get; set; }
+
+    [Parameter]
+    string Location { get; set; }
+
+    [Parameter]
+    string CompleteDate {get; set;}
+}
+
